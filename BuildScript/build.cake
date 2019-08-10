@@ -39,6 +39,7 @@ Task("Run-Unit-Tests")
 
   Task("Default")
     .IsDependentOn("Clean")
+	 .IsDependentOn("Build")
     .IsDependentOn("Run-Unit-Tests")
     ;
 

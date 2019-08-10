@@ -34,7 +34,7 @@ namespace MocVsStub
             order.Submit();
 
             mockMailServer.Received(1).Send(order.mailMessage);
-        }
+        
 
     }
 }
