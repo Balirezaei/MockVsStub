@@ -4,7 +4,7 @@ using MocVsStub.Model;
 using NSubstitute;
 using Xunit;
 
-namespace MocVsStub
+namespace MocVsStub.Test
 {
     public class MocVsStubUnitTest
     {
@@ -26,7 +26,7 @@ namespace MocVsStub
         public void MockSubmitOrderCheckMailSending()
         {
             Order order = new Order(product, 50);
-       
+
             var mockMailServer = NSubstitute.Substitute.For<IMailServer>();
             order.SetMailer(mockMailServer);
 
@@ -34,7 +34,7 @@ namespace MocVsStub
             order.Submit();
 
             mockMailServer.Received(1).Send(order.mailMessage);
-        
 
+        }
     }
 }

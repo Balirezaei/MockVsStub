@@ -1,5 +1,5 @@
 var solutionPath = Argument("SolutionPath", "../MockVsStub.sln");
-var unitTestProjects = GetFiles("../**/*Tests.csproj");
+var unitTestProjects = GetFiles("../**/*Test.csproj");
 
 Task("Clean")
     .Does(()=>{
