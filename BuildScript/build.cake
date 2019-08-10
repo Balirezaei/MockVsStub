@@ -1,4 +1,4 @@
-var solutionPath = Argument("SolutionPath", "../MocVsStub.sln");
+var solutionPath = Argument("SolutionPath", "../MockVsStub.sln");
 var unitTestProjects = GetFiles("../**/*Tests.csproj");
 
 Task("Clean")
