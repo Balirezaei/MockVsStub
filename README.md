@@ -1,6 +1,13 @@
 # MockVsStub
-Moc Vs Stub
+Mock Vs Stub
 
+
+Test Double:
+	Both mocks and stubs are test doubles, which are stand-ins for when developers don't want to use the real thing during tests
+		Mock is a type of test double that concentrate on behavior
+		Stub is a type of test double that concentrate on result value 
+	
+	
 
 Build Status :
 
